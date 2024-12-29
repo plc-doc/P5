@@ -1,4 +1,27 @@
-site_name: My MkDocs Material Documentation
+site_name: Руководство пользователя
 site_url: https://sitename.example
+
+
 theme:
   name: material
+  
+  language: ru
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: Red
+      accent: grey
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: Red
+      accent: grey 
+      
+extra_css:
+  - stylesheets/extra.css
