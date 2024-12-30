@@ -92,4 +92,5 @@
 | In2 | :green_circle:| Наличие внешнего питания 2 |
 | In2 | :white_circle:| Отсутствие внешнего питания 2 |
 
-
+## Габаритные размеры
+![alt text](img/dimensions_gm.png)
