@@ -8,7 +8,6 @@
 ![Image title](img/GM.png){ width="150" align=left  }
 Модуль основной GM (арт. IPCSA-OG-GM) является центральным компонентом системы управления.
 
-
 </div>
 
 ### Модуль основной выполняет следующие ключевые функции:
@@ -51,10 +50,12 @@
 
 
 ## Схема подключения
-![Image title](img/connection/GM.png){ width="355"; align=left  }
 
+<div class="grid cards" markdown>
+![Image title](img/connection/GM.svg){ width="355"; align=left  }
 
-![Image title](img/connector.png){ width="200";  }
+![Image title](img/connection/connector_6pin.png){ width="180";  }
+</div>
 
 | Обозначение | Наименование канала | Описание |
 | ----------- | - | --|

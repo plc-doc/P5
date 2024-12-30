@@ -1,0 +1,294 @@
+<EtherCATInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATInfo.xsd" Version="1.6">
+<Vendor>
+<Id>#xE00004D8</Id>
+<ImageData16x14>424df6010000000000003600000028000000100000000e000000010010000000000000000000120b0000120b00000000000000000000ffffffffddff0fff44fe22feadfeffffffffffffffffffffffff37ff2bfe6ffaffffdcff86fe62fe42fe22fe02febbffffffffffffffffffffffc7f962fdd2feffffcafe82fe22fe8afeadfeacfe57ffffff57ff57ff58fff4fe41fd63f9deffbaff82fe63fe76ffffffffffffffffffffff28fac2fd82fd62fd62fd6efaffff10ffa3feeffeffffffffffff9aff99ffddff58ffe5fda4f984f984f99bffffffa8fe62febaffffffffffffffcffe22fe6bfaffffffffffffffffdeffffffffff64fe43fefdffffffffffffffbbffc2fdc2fdbcffffff15ff15ffffffffffffff65fe43feddffffffffffffffffff6bfee2fd13ff15ffa2fda5f9ffffffffffffa9fe82fe99ffffffffffffffffff57ffe2fde5f9c6f982fd14ffffffffffffff31ffa3feccfeffffffffffffffffffffe6f9a2fd82fda5f9feffffffffffffffbbff62fe62fe32ffffffffffffffffffd1fec2fda2fdb1feffffffffffffffffffffecfe82fe42fe66fe89fe8afebcffddffa2f982f9ddfffffffffffffffffffffffeffa9fe62fe42fe22fe22feaefeffff28fa4bfaffffffffffffffffffffffffffffffff54ff8afe47fe47fe28feffff79ff79ffffffffffffffffffffff</ImageData16x14>
+
+<Name>IPCSA Inc.</Name>
+</Vendor>
+<Descriptions>
+<Groups>
+<Group>
+<Type>LAN9252-DIGIO</Type>
+<Name LcId="1033">IPCSA_OG</Name>
+
+<ImageData16x14>424df6010000000000003600000028000000100000000e000000010010000000000000000000120b0000120b00000000000000000000ffffffffddff0fff44fe22feadfeffffffffffffffffffffffff37ff2bfe6ffaffffdcff86fe62fe42fe22fe02febbffffffffffffffffffffffc7f962fdd2feffffcafe82fe22fe8afeadfeacfe57ffffff57ff57ff58fff4fe41fd63f9deffbaff82fe63fe76ffffffffffffffffffffff28fac2fd82fd62fd62fd6efaffff10ffa3feeffeffffffffffff9aff99ffddff58ffe5fda4f984f984f99bffffffa8fe62febaffffffffffffffcffe22fe6bfaffffffffffffffffdeffffffffff64fe43fefdffffffffffffffbbffc2fdc2fdbcffffff15ff15ffffffffffffff65fe43feddffffffffffffffffff6bfee2fd13ff15ffa2fda5f9ffffffffffffa9fe82fe99ffffffffffffffffff57ffe2fde5f9c6f982fd14ffffffffffffff31ffa3feccfeffffffffffffffffffffe6f9a2fd82fda5f9feffffffffffffffbbff62fe62fe32ffffffffffffffffffd1fec2fda2fdb1feffffffffffffffffffffecfe82fe42fe66fe89fe8afebcffddffa2f982f9ddfffffffffffffffffffffffeffa9fe62fe42fe22fe22feaefeffff28fa4bfaffffffffffffffffffffffffffffffff54ff8afe47fe47fe28feffff79ff79ffffffffffffffffffffff</ImageData16x14>
+	
+</Group>
+</Groups>
+
+<Devices>
+<Device Physics="YY">
+<Type ProductCode="#x00000020" RevisionNo="#x00000001">IPCSA-OG-DIGITAL-INPUT</Type>
+<Name LcId="1033">
+<![CDATA[IPCSA_OG_DI]]>
+</Name>
+<GroupType>LAN9252-DIGIO</GroupType>
+<Fmmu>Inputs</Fmmu>
+				<Sm DefaultSize="2" StartAddress="#x1000" ControlByte="0" Enable="1">Inputs</Sm>
+				<Su FrameRepeatSupport="1"></Su>
+				
+				<TxPdo Fixed="1" Mandatory="1" Sm="0">
+					<Index>#x1a00</Index>
+					<Name>Byte_Lo</Name>
+					<Entry>
+						<Index>#x6000</Index>
+						<SubIndex>1</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>Input</Name>
+						<DataType>BITARR8</DataType>
+					</Entry>
+				</TxPdo>
+				<TxPdo Fixed="1" Mandatory="1" Sm="0">
+					<Index>#x1a08</Index>
+					<Name>Byte_Hi</Name>
+					<Entry>
+						<Index>#x6080</Index>
+						<SubIndex>1</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>Input</Name>
+						<DataType>BITARR8</DataType>
+					</Entry>
+				</TxPdo>
+				
+
+				<Eeprom>
+					<ByteSize>2048</ByteSize>
+					<ConfigData>0401000000000000</ConfigData>
+				</Eeprom>
+</Device>
+
+
+	<Device Physics="YY">
+	<Type ProductCode="#x00000021" RevisionNo="#x00000001">IPCSA-OG-DIGITAL-OUTPUT</Type>
+	<Name LcId="1033">
+		<![CDATA[IPCSA_OG_DO]]>
+	</Name>
+	<GroupType>LAN9252-DIGIO</GroupType>
+	<Fmmu>Outputs</Fmmu>
+	<Sm StartAddress="#x0f00" ControlByte="#x44" Enable="1" OpOnly="1">Outputs</Sm>
+	<Sm StartAddress="#x0f01" ControlByte="#x44" Enable="1" OpOnly="1">Outputs</Sm>
+	<RxPdo Fixed="1" Sm="0">
+		<Index>#x1a00</Index>
+		<Name>Byte 0</Name>
+		<Entry>
+			<Index>#x3101</Index>
+			<SubIndex>1</SubIndex>
+			<BitLen>8</BitLen>
+			<Name>Output</Name>
+			<DataType>BITARR8</DataType>
+		</Entry>
+	</RxPdo>
+	
+	<RxPdo Fixed="1" Sm="0">
+		<Index>#x1a01</Index>
+		<Name>Byte 0</Name>
+		<Entry>
+			<Index>#x3101</Index>
+			<SubIndex>2</SubIndex>
+			<BitLen>8</BitLen>
+			<Name>Output</Name>
+			<DataType>BITARR8</DataType>
+		</Entry>
+	</RxPdo>
+	
+	<Eeprom>
+		<ByteSize>2048</ByteSize>
+		<!-- PDI=DIGIO(04);Enable enhanced link detection and DC - dont care - 
+						device emulation -on(03);Bidirectional mode (04); 
+						sync out enabled - push pull active low(44);
+						pulse length (1027);
+						Direction -output(ffff)
+					 -->
+		<!--<ConfigData>040304441027ffff</ConfigData> -->
+
+		<ConfigData>040F00441027FFFF</ConfigData>
+		
+		
+	</Eeprom>
+</Device>
+
+
+
+
+
+<Device Physics="YY">
+    <Type ProductCode="#x00000022" RevisionNo="#x00000001">IPCSA-OG-CURRENT-INPUT</Type>
+	<Name LcId="1033">
+		<![CDATA[IPCSA_OG_AIC]]>
+	</Name>
+        <Info>
+          <StateMachine>
+            <Timeout>
+              <PreopTimeout>2000</PreopTimeout>
+              <SafeopOpTimeout>9000</SafeopOpTimeout>
+              <BackToInitTimeout>5000</BackToInitTimeout>
+              <BackToSafeopTimeout>200</BackToSafeopTimeout>
+            </Timeout>
+          </StateMachine>
+          <Mailbox>
+            <Timeout>
+              <RequestTimeout>100</RequestTimeout>
+              <ResponseTimeout>2000</ResponseTimeout>
+            </Timeout>
+          </Mailbox>
+        </Info>
+        <GroupType>LAN9252-DIGIO</GroupType>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="34" MaxSize="128" DefaultSize="128" StartAddress="#x1000" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="34" MaxSize="128" DefaultSize="128" StartAddress="#x1080" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+        <Sm StartAddress="#x1100" ControlByte="#x64" DefaultSize="0" Enable="0">Outputs</Sm>
+        <Sm StartAddress="#x1400" ControlByte="#x20" DefaultSize="64" Enable="1">Inputs</Sm>
+        <TxPdo Mandatory="true" Fixed="true" Sm="3">
+          <Index>#x1A02</Index>
+          <Name>InputCurrent process data mapping</Name>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 00</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 01</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 02</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 03</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 04</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>6</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 05</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>7</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 06</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>8</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 07</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>9</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 08</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>10</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 09</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>11</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 10</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>12</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 11</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>13</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 12</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>14</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 13</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>15</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 14</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6020</Index>
+            <SubIndex>16</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Input 15</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+        </TxPdo>
+        <Mailbox DataLinkLayer="true">
+          <CoE SdoInfo="true" SegmentedSdo="true" CompleteAccess="true" />
+          <FoE />
+        </Mailbox>
+        <Dc>
+          <OpMode>
+            <Name>Synchron</Name>
+            <Desc>SM-Synchron</Desc>
+            <AssignActivate>#x0</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+          </OpMode>
+          <OpMode>
+            <Name>DC</Name>
+            <Desc>DC-Synchron</Desc>
+            <AssignActivate>#x300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+            <CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+          </OpMode>
+        </Dc>
+        <Eeprom>
+          <ByteSize>2048</ByteSize>
+          <ConfigData>800E00CC8813ff00000000800000</ConfigData>
+          <BootStrap>0010800000118000</BootStrap>
+        </Eeprom>
+        <ImageData16x14>424df6010000000000003600000028000000100000000e000000010010000000000000000000120b0000120b00000000000000000000ffffffffddff0fff44fe22feadfeffffffffffffffffffffffff37ff2bfe6ffaffffdcff86fe62fe42fe22fe02febbffffffffffffffffffffffc7f962fdd2feffffcafe82fe22fe8afeadfeacfe57ffffff57ff57ff58fff4fe41fd63f9deffbaff82fe63fe76ffffffffffffffffffffff28fac2fd82fd62fd62fd6efaffff10ffa3feeffeffffffffffff9aff99ffddff58ffe5fda4f984f984f99bffffffa8fe62febaffffffffffffffcffe22fe6bfaffffffffffffffffdeffffffffff64fe43fefdffffffffffffffbbffc2fdc2fdbcffffff15ff15ffffffffffffff65fe43feddffffffffffffffffff6bfee2fd13ff15ffa2fda5f9ffffffffffffa9fe82fe99ffffffffffffffffff57ffe2fde5f9c6f982fd14ffffffffffffff31ffa3feccfeffffffffffffffffffffe6f9a2fd82fda5f9feffffffffffffffbbff62fe62fe32ffffffffffffffffffd1fec2fda2fdb1feffffffffffffffffffffecfe82fe42fe66fe89fe8afebcffddffa2f982f9ddfffffffffffffffffffffffeffa9fe62fe42fe22fe22feaefeffff28fa4bfaffffffffffffffffffffffffffffffff54ff8afe47fe47fe28feffff79ff79ffffffffffffffffffffff</ImageData16x14>
+    </Device>
+
+
+
+
+</Devices>
+</Descriptions>
+</EtherCATInfo>
