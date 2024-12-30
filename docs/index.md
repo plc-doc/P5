@@ -1,17 +1,23 @@
-# Welcome to MkDocs
+# Основные сведения
+## Основные технические характеристики
+Основные технические характеристики
+Контроллер имеет блочно-модульную конструкцию, состоящую из одной или нескольких групп, которые включают в себя модули различного типа, закрепленные на несущую DIN-рейку. 
+Модули контроллера выпускаются в унифицированном корпусе, предназначенном для монтажа на DIN-рейку 35 мм.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![alt text](img/all_plc.png)
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Модуль является элементом контроллера и, в зависимости от типа, выполняет определённую функцию. 
+Контроллер ПЛК «IPCSA» серии «OG» включает в себя следующие модули:
+## Список модулей
+* [Модуль основной (GM)](GM.md)
+* Модуль аналогового ввода термосопротивления (AITR)
+* Модуль аналогового ввода термопары (AITC)
+* Модуль аналогового ввода тока (AIC)
+* Модуль аналогового ввода напряжения (AIV)
+* Модуль аналогового вывода (AO)
+* Модуль счета импульсов (SPPC)
+* Модуль дискретного ввода (DI)
+* Модуль дискретного вывода (DO)
+* Модуль ввода дополнительного питания (SPPM)
+* Модуль оконечный (SPTM)
+* Модуль интерфейсный RS-485/422 (SP485/422)
