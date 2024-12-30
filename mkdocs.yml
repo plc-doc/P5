@@ -7,6 +7,7 @@ theme:
   features:
     - glightbox
     - navigation.instant
+    
   favicon: img/logo.png 
   
   language: ru
@@ -35,6 +36,8 @@ nav:
   - articles.md
   - GM.md
   - DI.md
+  - DO.md
+  - SSMD.md
 
 markdown_extensions:
   - attr_list
@@ -56,3 +59,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - abbr
+  
