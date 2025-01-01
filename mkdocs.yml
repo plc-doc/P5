@@ -1,12 +1,14 @@
-site_name: Руководство пользователя
-site_url: https://sitename.example
+site_name: ПЛК ИПЦ СА
 
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - glightbox
     - navigation.instant
+    - navigation.tabs
+  
     
   favicon: img/logo.png 
   
@@ -32,12 +34,16 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - index.md
-  - articles.md
-  - GM.md
-  - DI.md
-  - DO.md
-  - SSMD.md
+  - Главная: index.md 
+  - Руководство пользователя:
+    - Основные сведения: index.md 
+    - Модуль основной IPCSA-OG-GM: user_manual/GM.md
+    - Модуль дискретного ввода IPCSA-OG-DI: DI.md
+    - Модуль дискретного вывода IPCSA-OG-DO: DO.md
+    - Модуль управления драйвером шагового двигателя IPCSA-OG-SSMD: SSMD.md
+  
+  - Статьи: blog/index.md
+
 
 markdown_extensions:
   - attr_list
@@ -60,4 +66,14 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - abbr
-  
+
+plugins:
+ - blog:
+     authors_file: .authors.yml
+ - tags:
+      tags_file: tags.md
+ 
+
+
+    
+
