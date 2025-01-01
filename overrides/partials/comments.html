@@ -1,3 +1,4 @@
+{% if page.file.src_uri.startswith('blog/posts') %}
 <script src="https://giscus.app/client.js"
         data-repo="plc-doc/og"
         data-repo-id="R_kgDONjprdA"
@@ -8,8 +9,9 @@
         data-reactions-enabled="1"
         data-emit-metadata="1"
         data-input-position="top"
-        data-theme="preferred_color_scheme"
+        data-theme="cobalt"
         data-lang="ru"
         crossorigin="anonymous"
         async>
 </script>
+{% endif %}
