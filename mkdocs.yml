@@ -1,4 +1,4 @@
-site_name: ПЛК ИПЦ СА
+site_name: ПЛК IPCSA
 
 
 theme:
@@ -40,9 +40,19 @@ nav:
   - Главная: index.md 
   - Руководство пользователя:
     - Модуль основной IPCSA-OG-GM: user_manual/GM.md
-    - Модуль дискретного ввода IPCSA-OG-DI: DI.md
-    - Модуль дискретного вывода IPCSA-OG-DO: DO.md
-    - Модуль управления драйвером шагового двигателя IPCSA-OG-SSMD: SSMD.md
+    - Модуль дискретного ввода IPCSA-OG-DI: user_manual/DI.md
+    - Модуль дискретного вывода IPCSA-OG-DO: user_manual/DO.md
+    - Модуль аналогового ввода тока IPCSA-OG-AIC: user_manual/AIC.md
+    - Модуль аналогового ввода термопары IPCSA-OG-AITC: user_manual/AITC.md
+    - Модуль аналогового ввода термосопротивления IPCSA-OG-AITR: user_manual/AITR.md
+    - Модуль аналогового вывода IPCSA-OG-AO: user_manual/AO.md
+    - Модуль счета импульсов IPCSA-OG-SPPC: user_manual/SPPC.md
+    - Модуль ввода дополнительного питания IPCSA-OG-SPPM: user_manual/SPPM.md
+    - Модуль оконечный IPCSA-OG-SPТM: user_manual/SPTM.md
+    - Модуль интерфейсный RS-485/422 IPCSA-OG-SP485/422: user_manual/SP485_422.md
+
+
+    - Модуль управления драйвером шагового двигателя IPCSA-OG-SSMD: user_manual/SSMD.md
   
   - Статьи: blog/index.md
 

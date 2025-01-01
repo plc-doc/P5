@@ -9,7 +9,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/DO.png){ width="150" align=left  }
+![Image title](../img/modules/DO.png){ width="150" align=left  }
 Модуль дискретных выходов DO (арт. IPCSA-OG-DO) является 16-ти канальным модулем расширения и предназначен для вывода дискретных команд постоянным напряжением 24 В.
 Модуль оснащен отдельной клеммой, обеспечивающей защиту от воздействия ЭДС самоиндукции при подключении к нему индуктивной нагрузки (электромагнитные реле и т.п.).
 
@@ -42,9 +42,9 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](img/connection/DO.svg){ width="370"; align=left  }
+![Image title](../img/connection/DO.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](../img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 | Обозначение | Название канала | Описание                       |
@@ -54,7 +54,7 @@
 | 18          | PCOM            | Защита от индуктивной нагрузки |
 
 ## Индикация
-![Image title](img/identification/18_leds.png){ width="50" }
+![Image title](../img/identification/18_leds.png){ width="50" }
 
 
 | Обозначение | Индикация | Показатель |
@@ -68,11 +68,11 @@
 | 1-16 | :white_circle:| Контакт «1», «2», ..., «16» разомнут|
 
 ## Габаритные размеры
-![alt text](img/dimensions.png)
+![alt text](../img/dimensions.png)
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 
-<a href="../files/ipcsa_modules_config.xml" download>ссылке</a>
+<a href="../../downloads/ipcsa_modules_config.xml" download>ссылке</a>
 
 
 ### Информация PDO модуля на языке C

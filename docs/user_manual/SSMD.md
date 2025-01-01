@@ -9,7 +9,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/DO.png){ width="150" align=left  }
+![Image title](../img/modules/DO.png){ width="150" align=left  }
 Модуль управления шаговым двигателем (арт. IPCSA-OG-SSMD) является 4-х канальным модулем расширения и предназначен подключения драйверов шаговых двигателей.
 Логические уровни по напряжению равны напряжению внешнего источника питания.
 
@@ -42,9 +42,9 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](img/connection/SSMD.svg){ width="370"; align=left  }
+![Image title](../img/connection/SSMD.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](../img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 | Обозначение | Название канала  | Описание                              |
@@ -69,7 +69,7 @@
 | 18          | GND              | Общий контакт для «сухого» подключения |
 
 ## Индикация
-![Image title](img/identification/6_leds.png){ width="50" }
+![Image title](../img/identification/6_leds.png){ width="50" }
 
 
 | Обозначение | Индикация | Показатель |
@@ -84,7 +84,7 @@
 | 1 - 4 | :white_circle:| ENA 1 - 4 не активен|
 
 ## Габаритные размеры
-![alt text](img/dimensions.png)
+![alt text](../img/dimensions.png)
 
 ## Программное обеспечение
 

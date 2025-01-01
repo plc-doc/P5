@@ -9,7 +9,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/DI.png){ width="150" align=left  }
+![Image title](../img/modules/DI.png){ width="150" align=left  }
 Модуль дискретного ввода DI (арт. IPCSA-OG-DI) является 16-ти канальным модулем расширения и предназначен для приема и обработки дискретных команд от внешних устройств.
 В модуле предусмотрено две схемы подключения: «сухим» (dry) и «мокрым» (wet) контактом.
 При подключении «мокрым» контактом модуль принимает дискретные команды постоянным напряжением 24 В от внешнего источника питания, при этом допускается подача напряжения как положительной, так и отрицательной полярности.
@@ -31,6 +31,9 @@
 | Масса, г                                          | 125                                           |
 | Габариты В×Ш×Г, мм                                | 126×21,3×90                                   |
 
+???+ warning "Предупреждение"
+
+    Без подключения защитного заземления не использовать
 ## Эксплуатационные характеристики
 | Характеристика	| Значение |
 | - | - |
@@ -44,9 +47,9 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](img/connection/DI.svg){ width="370"; align=left  }
+![Image title](../img/connection/DI.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](../img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 Контакты «GND_DRY» и «GND_WET» предназначены для подключения входов по принципу «сухого» или «мокрого» контакта соответственно.
@@ -58,7 +61,7 @@
 | 18          | G_DRY            | Общий контакт при подклбчении по схеме "сухой контакт" |
 
 ## Индикация
-![Image title](img/identification/18_leds.png){ width="50" }
+![Image title](../img/identification/18_leds.png){ width="50" }
 
 
 | Обозначение | Индикация | Показатель |
@@ -68,15 +71,15 @@
 | L | :green_circle:| Наличие соединения Ethernet |
 | L | :yellow_circle: :green_circle: :yellow_circle: | Обмен данными по Ethernet |
 | L | :white_circle:| Отсутствие соединения Ethernet|
-| 1-16 | :green_circle:| Контакт «1», «2», ..., «16» замкнут  |
-| 1-16 | :white_circle:| Контакт «1», «2», ..., «16» разомнут|
+| 1-16 | :green_circle:| Контакт 1 - 16 замкнут  |
+| 1-16 | :white_circle:| Контакт 1 - 16 разомнут|
 
 ## Габаритные размеры
-![alt text](img/dimensions.png)
+![alt text](../img/dimensions.png)
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 
-<a href="../files/ipcsa_modules_config.xml" download>ссылке</a>
+<a href="../../downloads/ipcsa_modules_config.xml" download>ссылке</a>
 
 
 ### Информация PDO модуля на языке C
