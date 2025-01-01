@@ -33,10 +33,12 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - overrides/main.js
+
 nav:
   - Главная: index.md 
   - Руководство пользователя:
-    - Основные сведения: index.md 
     - Модуль основной IPCSA-OG-GM: user_manual/GM.md
     - Модуль дискретного ввода IPCSA-OG-DI: DI.md
     - Модуль дискретного вывода IPCSA-OG-DO: DO.md
@@ -56,7 +58,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - attr_list
+  
   - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
