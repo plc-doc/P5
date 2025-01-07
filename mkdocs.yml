@@ -40,9 +40,7 @@ extra_javascript:
 nav:
   - Главная: index.md 
   - Руководство пользователя:  
-    - Основные сведения: user_manual/basic_nformation.md
-    - Составление групп: user_manual/groups.md
-    - Организация питания: user_manual/power.md
+    
     - Основные модули:
       - Модуль основной IPCSA-OG-GM: user_manual/GM.md
     - Дискретные модули:
@@ -62,6 +60,12 @@ nav:
       - Модуль ввода дополнительного питания IPCSA-OG-SPPM: user_manual/SPPM.md
       - Модуль оконечный IPCSA-OG-SPТM: user_manual/SPTM.md
       - Модуль управления драйвером шагового двигателя IPCSA-OG-SSMD: user_manual/SSMD.md
+    - Основные сведения: user_manual/basic_nformation.md
+    - Составление групп: user_manual/groups.md
+    - Составление сборки: user_manual/assembly.md
+    - Организация питания: user_manual/power.md
+    - Монтаж и демонтаж модулей: user_manual/installation.md 
+    - Техническое обслуживание: user_manual/maintenance.md 
   
   - Статьи: blog/index.md
 
