@@ -4,13 +4,16 @@ site_name: ПЛК IPCSA
 theme:
   name: material
   custom_dir: overrides
+  font:
+    text: Montserrat
   features:
     - glightbox
     - navigation.instant
     - navigation.tabs
   
-    
-  favicon: img/logo.png 
+  logo: img/logo.svg
+  favicon: img/favicon.svg
+ 
   
   language: ru
   palette:
@@ -32,6 +35,9 @@ theme:
       
 extra_css:
   - stylesheets/extra.css
+extra:
+  generator: false
+
 
 extra_javascript:
   - overrides/main.js
