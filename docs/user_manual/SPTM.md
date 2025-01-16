@@ -74,8 +74,12 @@
 
     Без подключения защитного заземления не использовать
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_end.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 
 

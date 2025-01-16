@@ -71,8 +71,12 @@
 | 1-16 | :green_circle:| Контакт 1 - 16 замкнут  |
 | 1-16 | :white_circle:| Контакт 1 - 16 разомнут|
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 

@@ -83,8 +83,12 @@
 | 1 - 4 | :red_circle:| Индикация неисправности канала 1 - 4 (программная реализация)|
 | 1 - 4 | :white_circle:| ENA 1 - 4 не активен|
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## Программное обеспечение
 

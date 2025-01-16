@@ -68,8 +68,12 @@
 | 1-4 | :green_circle:| Информация ожидается  |
 | 1-4 | :white_circle:| Информация ожидается  |
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 

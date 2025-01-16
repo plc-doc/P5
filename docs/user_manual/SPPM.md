@@ -7,7 +7,6 @@
     На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
 <div class="grid cards" markdown>
 
-<div class="grid cards" markdown>
 
 ![Image title](../img/modules/AITR.png){ width="150" align=left  }
 Модуль ввода дополнительного питания (SPPM) (арт. IPCSA-OG-SPPM) является модулем расширения и предназначен для обеспечения питания модулей, расположенных справа от него.
@@ -95,8 +94,12 @@
 | in2 | :green_circle: | Наличие внешнего питания 2 |
 | in2 | :white_circle: | Отсутствие внешнего питания 2 |
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 
 

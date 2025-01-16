@@ -7,7 +7,6 @@
     На текущий момент модуль на стадии разработки. Начало тестирования запланировано на апрель 2025 года
 <div class="grid cards" markdown>
 
-<div class="grid cards" markdown>
 
 ![Image title](../img/modules/AITR.png){ width="150" align=left  }
 Модуль аналогового ввода термосопротивления (AITR) (арт. IPCSA-OG-AITR) является 4-х канальным модулем расширения и предназначен для получения и обработки сигналов от терморезисторов.  
@@ -110,8 +109,12 @@
 | 1 - 4 | :green_circle:| Датчик 1 - 4 подключен |
 | 1 - 4 | :white_circle:| Датчик 1 - 4 отключен |
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 

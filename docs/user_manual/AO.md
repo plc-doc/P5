@@ -7,7 +7,6 @@
     На текущий момент модуль на стадии разработки. Начало тестирования запланировано на апрель 2025 года
 <div class="grid cards" markdown>
 
-<div class="grid cards" markdown>
 
 ![Image title](../img/modules/AITR.png){ width="150" align=left  }
 Модуль аналогового вывода (AO) (арт. IPCSA-OG-AO) является 8-ми канальным модулем расширения и предназначен для выдачи аналоговых сигналов на внешние устройства.  
@@ -88,8 +87,12 @@
 | L | :yellow_circle: :green_circle: :yellow_circle: | Обмен данными по Ethernet |
 | L | :white_circle:| Отсутствие соединения Ethernet|
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 

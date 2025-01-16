@@ -82,8 +82,12 @@
 | 1-16 | :green_circle:| Ток канала больше заданного (по умолчанию 4 мА)  |
 | 1-16 | :white_circle:| Ток канала меньше заданного (по умолчанию 4 мА) |
 
-## Габаритные размеры
-![alt text](../img/dimensions.png)
+## Размеры
+
+=== "Габаритные размеры" 
+    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+=== "Установочные размеры"
+    ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 
