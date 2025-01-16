@@ -13,7 +13,8 @@ theme:
   
   logo: img/logo.svg
   favicon: img/favicon.svg
- 
+    
+  favicon: img/logo.png 
   
   language: ru
   palette:
@@ -22,7 +23,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: Red
+      primary: red
       accent: grey
 
     # Light Mode
@@ -30,7 +31,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: Red
+      primary: red
       accent: grey 
       
 extra_css:
