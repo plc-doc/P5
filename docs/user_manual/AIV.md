@@ -79,8 +79,7 @@
 | L | :green_circle:| Наличие соединения Ethernet |
 | L | :yellow_circle: :green_circle: :yellow_circle: | Обмен данными по Ethernet |
 | L | :white_circle:| Отсутствие соединения Ethernet|
-| 1-16 | :green_circle:| Ток канала больше заданного (по умолчанию 4 мА)  |
-| 1-16 | :white_circle:| Ток канала меньше заданного (по умолчанию 4 мА) |
+
 
 ## Размеры
 
