@@ -10,6 +10,7 @@ theme:
     - glightbox
     - navigation.instant
     - navigation.tabs
+    - content.code.annotate
   
   logo: img/logo.svg
   favicon: img/favicon.svg
