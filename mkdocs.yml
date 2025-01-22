@@ -11,6 +11,8 @@ theme:
     - navigation.instant
     - navigation.tabs
     - content.code.annotate
+    - search.suggest
+    - search.highlight
   
   logo: img/logo.svg
   favicon: img/favicon.svg
@@ -103,6 +105,7 @@ markdown_extensions:
   - abbr
 
 plugins:
+ - search
  - blog:
      authors_file: .authors.yml
  - tags:
@@ -110,5 +113,4 @@ plugins:
  
 
 
-    
-
+ 

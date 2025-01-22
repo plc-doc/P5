@@ -90,7 +90,7 @@
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 
-<a href="../../downloads/ipcsa_modules_config.xml" download>ссылке</a>
+<a href="../../downloads/IPCSA_OG.xml" download>ссылке</a>
 
 ``` c title="PDO"
 SM0: PhysAddr 0x1000, DefaultSize  128, ControlRegister 0x26, Enable 1

@@ -75,7 +75,7 @@
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 
-<a href="../../downloads/ipcsa_modules_config.xml" download>ссылке</a>
+<a href="../../downloads/IPCSA_OG.xml" download>ссылке</a>
 
 
 
