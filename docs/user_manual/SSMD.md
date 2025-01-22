@@ -86,7 +86,7 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![alt text](../img/dimensions/overall_dimensions_extensions.png)
+    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
     ![alt text](../img/dimensions/installation_dimensions.png) 
 
