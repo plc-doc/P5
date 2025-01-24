@@ -13,6 +13,7 @@ theme:
     - content.code.annotate
     - search.suggest
     - search.highlight
+    - content.code.copy
   
   logo: img/logo.svg
   favicon: img/favicon.svg

@@ -92,7 +92,7 @@
 Акутуальный конфигурационный файл можно скачать по 
 <a href="../../downloads/IPCSA_OG.xml" download>ссылке</a>
 
-``` c title="PDO"
+``` dtd title="PDO"
 SM0: PhysAddr 0x1000, DefaultSize  128, ControlRegister 0x26, Enable 1
 SM1: PhysAddr 0x1080, DefaultSize  128, ControlRegister 0x22, Enable 1
 SM2: PhysAddr 0x1100, DefaultSize    0, ControlRegister 0x24, Enable 1
@@ -108,7 +108,7 @@ SM3: PhysAddr 0x1180, DefaultSize   32, ControlRegister 0x20, Enable 1
     PDO entry 0x6000:08, 32 bit, "Channel 8"
 ```
 
-``` c title="SDO"
+``` dtd title="SDO"
 SDO 0x1000, "Device Type"
   0x1000:00, r-r-r-, uint32, 32 bit, "Device Type"
 SDO 0x1008, "Device Name"
@@ -161,7 +161,7 @@ SDO 0x6000, "Input voltage"
   0x6000:08, r-r-r-, float, 32 bit, "Channel 8"
 SDO 0x8001, "Filtering" 
   0x8001:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x8001:01, rwrwrw, uint8, 8 bit, "Average samples 1" // (1)!
+  0x8001:01, rwrwrw, uint8, 8 bit, "Average samples 1" <!--(1)!-->
   0x8001:02, rwrwrw, uint8, 8 bit, "Average samples 2"
   0x8001:03, rwrwrw, uint8, 8 bit, "Average samples 3"
   0x8001:04, rwrwrw, uint8, 8 bit, "Average samples 4"
@@ -171,7 +171,7 @@ SDO 0x8001, "Filtering"
   0x8001:08, rwrwrw, uint8, 8 bit, "Average samples 8"
 SDO 0x8002, "Range Setting"
   0x8002:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x8002:01, rwrwrw, uint8, 8 bit, "Input Range" // (2)!
+  0x8002:01, rwrwrw, uint8, 8 bit, "Input Range" <!--(2)!-->
 SDO 0x9001, "Module parameters"
   0x9001:00, r-r-r-, uint8, 8 bit, "Number of entries"
   0x9001:01, r-r-r-, uint16, 16 bit, "Metrology CRC16"  

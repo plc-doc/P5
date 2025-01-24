@@ -81,10 +81,10 @@
 
 ### Информация PDO модуля на языке C
 
-``` c title="PDO"
+``` dtd title="PDO"
     SM0: PhysAddr 0x0f00, DefaultSize    0, ControlRegister 0x44, Enable 9
   RxPDO 0x1a00 "Byte 0"
-    PDO entry 0x3101:01,  8 bit, "Output" // (1)!
+    PDO entry 0x3101:01,  8 bit, "Output" <!--(1)!-->
   RxPDO 0x1a01 "Byte 0"
     PDO entry 0x3101:02,  8 bit, "Output"
 SM1: PhysAddr 0x0f01, DefaultSize    0, ControlRegister 0x44, Enable 9

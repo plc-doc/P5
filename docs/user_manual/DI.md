@@ -83,10 +83,10 @@
 <a href="../../downloads/IPCSA_OG.xml" download>ссылке</a>
 
 
-``` c title="PDO"
+``` dtd title="PDO"
 SM0: PhysAddr 0x1000, DefaultSize    2, ControlRegister 0x00, Enable 1
   TxPDO 0x1a00 "Byte_Lo"
-    PDO entry 0x6000:01,  8 bit, "Input" // (1)!
+    PDO entry 0x6000:01,  8 bit, "Input" <!--(1)!-->
   TxPDO 0x1a08 "Byte_Hi"
     PDO entry 0x6080:01,  8 bit, "Input"
 ```
