@@ -18,11 +18,118 @@
 	
 	
 	<Device Physics="YY">
-		<Type ProductCode="#x00000020" RevisionNo="#x00000001">IPCSA-OG-DIGITAL-INPUT</Type>
+		<Type ProductCode="#x00000001" RevisionNo="#x00000001">IPCSA-OG-DIGITAL-INPUT</Type>
 		<Name LcId="1033">
 		<![CDATA[IPCSA_OG_DI]]>
 		</Name>
 		<GroupType>LAN9252-DIGIO</GroupType>
+		<Profile>
+		 <Dictionary>
+		  <DataTypes>
+			<DataType>
+                <Name>DT1018</Name>
+                <BitSize>144</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>SubIndex 000</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>Vendor ID</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>Product code</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>Revision</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>Serial number</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>112</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+              </DataType>
+		    </DataTypes>
+			
+		<Objects>
+		    <Object>
+                <Index>#x1018</Index>
+                <Name>Identity</Name>
+                <Type>DT1018</Type>
+                <BitSize>144</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>SubIndex 000</Name>
+                    <Info>
+                      <DefaultData>04</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Vendor ID</Name>
+                    <Info>
+                      <DefaultData>07200301</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Product code</Name>
+                    <Info>
+                      <DefaultData>01000000</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Revision</Name>
+                    <Info>
+                      <DefaultData>01000000</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Serial numbver</Name>
+                    <Info>
+                      <DefaultData>00000000</DefaultData>
+                    </Info>
+                  </SubItem>
+                </Info>
+              </Object>
+		  </Objects>
+		 </Dictionary>
+		</Profile>
+		
 		<Fmmu>Inputs</Fmmu>
 				<Sm DefaultSize="2" StartAddress="#x1000" ControlByte="0" Enable="1">Inputs</Sm>
 				<Su FrameRepeatSupport="1"></Su>
@@ -59,11 +166,118 @@
 
 
 	<Device Physics="YY">
-		<Type ProductCode="#x00000021" RevisionNo="#x00000001">IPCSA-OG-DIGITAL-OUTPUT</Type>
+		<Type ProductCode="#x00000002" RevisionNo="#x00000001">IPCSA-OG-DIGITAL-OUTPUT</Type>
 		<Name LcId="1033">
 			<![CDATA[IPCSA_OG_DO]]>
 		</Name>
 		<GroupType>LAN9252-DIGIO</GroupType>
+		<Profile>
+		 <Dictionary>
+		  <DataTypes>
+			<DataType>
+                <Name>DT1018</Name>
+                <BitSize>144</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>SubIndex 000</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>Vendor ID</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>Product code</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>Revision</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>Serial number</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>112</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                    <Category>o</Category>
+                  </Flags>
+                </SubItem>
+              </DataType>
+		    </DataTypes>
+			
+		<Objects>
+		    <Object>
+                <Index>#x1018</Index>
+                <Name>Identity</Name>
+                <Type>DT1018</Type>
+                <BitSize>144</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>SubIndex 000</Name>
+                    <Info>
+                      <DefaultData>04</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Vendor ID</Name>
+                    <Info>
+                      <DefaultData>07200301</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Product code</Name>
+                    <Info>
+                      <DefaultData>02000000</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Revision</Name>
+                    <Info>
+                      <DefaultData>01000000</DefaultData>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>Serial number</Name>
+                    <Info>
+                      <DefaultData>00000000</DefaultData>
+                    </Info>
+                  </SubItem>
+                </Info>
+              </Object>
+		  </Objects>
+		 </Dictionary>
+		</Profile>
+		
 		<Fmmu>Outputs</Fmmu>
 		<Sm StartAddress="#x0f00" ControlByte="#x44" Enable="1" OpOnly="1">Outputs</Sm>
 		<Sm StartAddress="#x0f01" ControlByte="#x44" Enable="1" OpOnly="1">Outputs</Sm>
@@ -109,7 +323,7 @@
 	
 	
       <Device Physics="YY">
-        <Type ProductCode="#x00009252" RevisionNo="#x1">IPCSA-OG-AIC</Type>
+        <Type ProductCode="#x00000003" RevisionNo="#x1">IPCSA-OG-AIC</Type>
         <Name LcId="1033">IPCSA-OG-AIC</Name>
         <Name LcId="1031">IPCSA-OG-AIC</Name>
         <Info>
@@ -1330,13 +1544,13 @@
                   <SubItem>
                     <Name>Vendor ID</Name>
                     <Info>
-                      <DefaultData>01000000</DefaultData>
+                      <DefaultData>07200301</DefaultData>
                     </Info>
                   </SubItem>
                   <SubItem>
                     <Name>Product code</Name>
                     <Info>
-                      <DefaultData>52920000</DefaultData>
+                      <DefaultData>03000000</DefaultData>
                     </Info>
                   </SubItem>
                   <SubItem>
@@ -1348,7 +1562,7 @@
                   <SubItem>
                     <Name>Serial number</Name>
                     <Info>
-                      <DefaultData>01000000</DefaultData>
+                      <DefaultData>00000000</DefaultData>
                     </Info>
                   </SubItem>
                 </Info>
@@ -1750,7 +1964,7 @@
       </Device>
 	  
 	  <Device Physics="YY">
-        <Type ProductCode="#x01009252" RevisionNo="#x1">IPCSA-OG-AIV</Type>
+        <Type ProductCode="#x00000004" RevisionNo="#x1">IPCSA-OG-AIV</Type>
         <Name LcId="1033">IPCSA-OG-AIV</Name>
         <Name LcId="1031">IPCSA-OG-AIV</Name>
         <Info>
@@ -2753,13 +2967,13 @@
                   <SubItem>
                     <Name>Vendor ID</Name>
                     <Info>
-                      <DefaultData>01000000</DefaultData>
+                      <DefaultData>07200301</DefaultData>
                     </Info>
                   </SubItem>
                   <SubItem>
                     <Name>Product code</Name>
                     <Info>
-                      <DefaultData>52920000</DefaultData>
+                      <DefaultData>04000000</DefaultData>
                     </Info>
                   </SubItem>
                   <SubItem>
@@ -2771,7 +2985,7 @@
                   <SubItem>
                     <Name>Serial number</Name>
                     <Info>
-                      <DefaultData>01000000</DefaultData>
+                      <DefaultData>00000000</DefaultData>
                     </Info>
                   </SubItem>
                 </Info>
