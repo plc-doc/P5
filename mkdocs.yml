@@ -64,15 +64,21 @@ nav:
       - Модуль аналогового ввода напряжения IPCSA-OG-AIV: user_manual/AIV.md 
       - Модуль аналогового ввода термопары IPCSA-OG-AITC: user_manual/AITC.md
       - Модуль аналогового ввода термосопротивления IPCSA-OG-AITR: user_manual/AITR.md
+      - Модуль аналогового ввода синусно-коссинусного трансформатора IPCSA-OG-AISCT: user_manual/AISCT.md
+      - Модуль аналогового ввода виброскорости IPCSA-OG-AIVS: user_manual/AIVS.md
       - Модуль аналогового вывода IPCSA-OG-AO: user_manual/AO.md
     - Интерфейсные модули:
        - Модуль интерфейсный RS-485/422 IPCSA-OG-IF485/422: user_manual/IF485_422.md
-       - Модуль интерфейсный ARINC IPCSA-OG-IFARINC: user_manual/ARINC.md
+       - Модуль интерфейсный IFARINC IPCSA-OG-IFARINC: user_manual/IFARINC.md
+       - Модуль интерфейсный IFCAN IPCSA-OG-IFCAN: user_manual/IFCAN.md
+       - Модуль интерфейсный IF232 IPCSA-OG-IF232: user_manual/IF232.md
+       - Модуль интерфейсный IFHART IPCSA-OG-IFHART: user_manual/IFHART.md
     - Специальные модули:
       - Модуль счета импульсов IPCSA-OG-SPPC: user_manual/SPPC.md
       - Модуль ввода дополнительного питания IPCSA-OG-SPPM: user_manual/SPPM.md
       - Модуль оконечный IPCSA-OG-SPТM: user_manual/SPTM.md
       - Модуль управления драйвером шагового двигателя IPCSA-OG-SSMD: user_manual/SSMD.md
+      - Модуль расширения коммутации IPCSA-OG-SPSE: user_manual/SPSE.md
     - Основные сведения: user_manual/basic_nformation.md
     - Составление групп: user_manual/groups.md
     - Составление сборки: user_manual/assembly.md
