@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/AITR.png){ width="150" align=left  }
+![Image title](../img/modules/AO.png){ width="150" align=left  }
 Модуль аналогового вывода (AO) (арт. IPCSA-OG-AO) является 8-ми канальным модулем расширения и предназначен для выдачи аналоговых сигналов на внешние устройства.  
 Каждый канал модуля может выдавать постоянное напряжение или постоянный ток.
 </div>

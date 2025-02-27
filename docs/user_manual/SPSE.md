@@ -6,10 +6,11 @@
 
 <div class="grid cards" markdown>
 
-![Image title](../img/modules/SPTM.png){ width="150" align=left  }
+![Image title](../img/modules/SPSE.png){ width="150" align=left  }
 Модуль расширения коммутации (арт. IPCSA-OG-SPSE) является модулем расширения и предназначен для организации сложных топологий путем разветвления соединений в системе автоматизации.  
 
 </div>
+
 
 ## Технические характеристики 
 | Характеристика                             | Значение          |
