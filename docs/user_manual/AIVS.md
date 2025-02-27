@@ -18,7 +18,6 @@
 | Максимальная потребляемая мощность, Вт  | Тестируется                       |
 | Количество входных каналов              | 4                                 |
 | Гальваническая изоляция                 | Между входной и выходной логикой  |
-| Тип проводника                          | Медный                            |
 | Сечение проводника, мм²                 | От 0,2 до 1,5                     |
 | Масса, г                                | 125                               |
 | Габариты ВхШхГ, мм                      | 126х21,3х90                       |
@@ -36,7 +35,7 @@
 ## Схема подключения
 
 <div class="grid cards" markdown>
-![Image title](../img/connection/AIV.svg){ width="370"; align=left  }
+![Image title](../img/connection/AIVS.svg){ width="370"; align=left  }
 
 ![Image title](../img/connection/connector_18pin.png){ width="170";  }
 </div>
@@ -64,9 +63,6 @@
 
 
 ## Индикация
-![Image title](../img/identification/18_leds.png){ width="50" }
-
-
 | Обозначение | Индикация | Показатель |
 |------------------|----------------------|---------------------------------------|
 | P | :green_circle:| Наличие напряжения питания |
@@ -82,3 +78,11 @@
     ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"  }
 === "Установочные размеры"
     ![alt text](../img/dimensions/installation_dimensions.png) 
+
+## 3D-модель
+<model-viewer src="http://127.0.0.1:8000/img/modules/DI_3D.glb"`
+alt="3D Model"
+auto-rotate
+camera-controls
+style="width: 100%; height: 500px;">
+</model-viewer>

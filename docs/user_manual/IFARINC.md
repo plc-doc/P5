@@ -3,7 +3,6 @@
 ## Общие сведения
 
 ??? example "Разработка"
-
     На текущий момент модуль на стадии разработки. Начало тестирования запланированно на апрель 2025 года 
 
 <div class="grid cards" markdown>
@@ -23,7 +22,6 @@
 | Гальваническая изоляция                           | Между входной и выходной логикой              |
 | Скорость передачи данных, Кбит/с                  | 100                                           |
 | Максимальная длина подключаемого кабеля, м        | 100                                           |
-| Тип проводника                                    | Медный                                        |
 | Сечение проводника, мм²                           | От 0,2 до 1,5                                 |
 | Масса, г                                          | 125                                           |
 | Габариты В×Ш×Г, мм                                | 126×21,3×90                                   |
@@ -39,11 +37,10 @@
 | Расположение при монтаже         | Вертикальное       |
 
 ## Схема подключения
-
 <div class="grid cards" markdown>
-![Image title](../img/temporarily/temporarily.png){ width="370"; align=left  }
+![Image title](../img/connection/IFARINC.svg){ width="370"; align=left  }
 
-![Image title](../img/temporarily/temporarily.png){ width="170";  }
+![Image title](../img/connection/connector_18pin.png){ width="170";  }
 </div>
 
 Контакты «GND_DRY» и «GND_WET» предназначены для подключения входов по принципу «сухого» или «мокрого» контакта соответственно.
@@ -55,9 +52,6 @@
 | 18          | G_DRY            | Общий контакт при подклбчении по схеме "сухой контакт" |
 
 ## Индикация
-![Image title](../img/identification/6_leds.png){ width="50" }
-
-
 | Обозначение | Индикация | Показатель |
 |------------------|----------------------|---------------------------------------|
 | P | :green_circle:| Наличие напряжения питания |
@@ -69,11 +63,18 @@
 | 1-4 | :white_circle:| Информация ожидается  |
 
 ## Размеры
-
 === "Габаритные размеры" 
     ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
 === "Установочные размеры"
     ![alt text](../img/dimensions/installation_dimensions.png) 
+
+## 3D-модель
+<model-viewer src="http://127.0.0.1:8000/img/modules/DI_3D.glb"`
+alt="3D Model"
+auto-rotate
+camera-controls
+style="width: 100%; height: 500px;">
+</model-viewer>
 
 ## Программное обеспечение
 Акутуальный конфигурационный файл можно скачать по 

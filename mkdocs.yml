@@ -1,5 +1,5 @@
 site_name: ПЛК IPCSA
-
+site_url: http://127.0.0.1:8000/
 
 theme:
   name: material
@@ -47,6 +47,8 @@ extra:
 
 extra_javascript:
   - overrides/main.js
+  - path: https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js
+    type: module
 
 
 nav:
