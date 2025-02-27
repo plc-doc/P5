@@ -4,7 +4,6 @@
 
 ??? note "Разработка"
     На текущий момент модуль на стадии разработки. Начало тестирования запланировано на июнь 2025 года
-<div class="grid cards" markdown>
 
 <div class="grid cards" markdown>
 ![Image title](../img/modules/DPWM.png){ width="150" align=left  }
@@ -67,12 +66,13 @@
     ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
-<model-viewer src="http://127.0.0.1:8000/img/modules/DI_3D.glb"`
+<model-viewer src="https://xn--j1abl.online//img/3d/DI.glb"
 alt="3D Model"
 auto-rotate
 camera-controls
 style="width: 100%; height: 500px;">
 </model-viewer>
+
 
 
 ## Программное обеспечение

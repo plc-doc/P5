@@ -73,7 +73,7 @@
     ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
-<model-viewer src="https://xn--j1abl.online/img/modules/DI_3D.glb"
+<model-viewer src="https://xn--j1abl.online//img/3d/DI.glb"
 alt="3D Model"
 auto-rotate
 camera-controls

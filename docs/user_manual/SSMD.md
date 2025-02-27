@@ -86,11 +86,12 @@
     ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
-<model-viewer src="http://127.0.0.1:8000/img/modules/DI_3D.glb"`
+<model-viewer src="https://xn--j1abl.online//img/3d/DI.glb"
 alt="3D Model"
 auto-rotate
 camera-controls
 style="width: 100%; height: 500px;">
+</model-viewer>
 </model-viewer>
 
 ## Программное обеспечение

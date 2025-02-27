@@ -23,6 +23,7 @@
 | Максимальный ток логической единицы, мА/канал | 140                  |
 | Ток логического нуля (утечки), мкА     | 25                           |
 | Гальваническая изоляция                | Между входной и выходной логикой |
+
 | Сечение проводника, мм²                | От 0,2 до 1,5                |
 | Масса, г                               | 125                          |
 | Габариты ВхШхГ, мм                     | 126х21,3х90                  |
@@ -70,7 +71,7 @@
     ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
-<model-viewer src="http://127.0.0.1:8000/img/modules/DI_3D.glb"`
+<model-viewer src="https://xn--j1abl.online//img/3d/DI.glb"
 alt="3D Model"
 auto-rotate
 camera-controls
