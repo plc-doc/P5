@@ -1,4 +1,4 @@
-# Модуль оконечный IPCSA-OG-SPSE
+# Модуль расширения коммутации IPCSA-OG-SPSE
 
 ## Общие сведения
 ??? note "Разработка"
@@ -45,5 +45,15 @@
     ![alt text](../img/dimensions/installation_dimensions.png) 
 
 
+<model-viewer src="https://xn--j1abl.online//img/3d/SPTM.glb"
+alt="3D Model"
+auto-rotate
+camera-controls
+poster="https://xn--j1abl.online//img/3d/posterSPTM.webp"
+camera-orbit="160deg 75deg 348m"
+field-of-view="30deg"
+exposure="0.5"
+style="width: 100%; height: 500px;">
+</model-viewer>
 
 
