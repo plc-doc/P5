@@ -80,124 +80,115 @@ style="width: 100%; height: 500px;">
 </model-viewer>
 
 ## Программное обеспечение
-Актуальный конфигурационный файл можно скачать по 
-<a href="../../downloads/IPCSA_OG.xml" download>ссылке</a>
+Обмен данными осуществляется с использованием объектов PDO (Process Data Objects) для оперативной передачи входных данных и SDO (Service Data Objects) для настройки параметров и получения статуса каналов.
 
-``` dtd title="PDO"
-SM0: PhysAddr 0x1000, DefaultSize  128, ControlRegister 0x26, Enable 1
-SM1: PhysAddr 0x1080, DefaultSize  128, ControlRegister 0x22, Enable 1
-SM2: PhysAddr 0x1100, DefaultSize    0, ControlRegister 0x24, Enable 1
-SM3: PhysAddr 0x1180, DefaultSize   64, ControlRegister 0x20, Enable 1
-  TxPDO 0x1a00 "Current inputs"
-    PDO entry 0x6000:01, 32 bit, "Channel 1"
-    PDO entry 0x6000:02, 32 bit, "Channel 2"
-    PDO entry 0x6000:03, 32 bit, "Channel 3"
-    PDO entry 0x6000:04, 32 bit, "Channel 4"
-    PDO entry 0x6000:05, 32 bit, "Channel 5"
-    PDO entry 0x6000:06, 32 bit, "Channel 6"
-    PDO entry 0x6000:07, 32 bit, "Channel 7"
-    PDO entry 0x6000:08, 32 bit, "Channel 8"
-    PDO entry 0x6000:09, 32 bit, "Channel 9"
-    PDO entry 0x6000:0a, 32 bit, "Channel 10"
-    PDO entry 0x6000:0b, 32 bit, "Channel 11"
-    PDO entry 0x6000:0c, 32 bit, "Channel 12"
-    PDO entry 0x6000:0d, 32 bit, "Channel 13"
-    PDO entry 0x6000:0e, 32 bit, "Channel 14"
-    PDO entry 0x6000:0f, 32 bit, "Channel 15"
-    PDO entry 0x6000:10, 32 bit, "Channel 16"
+### PDO (Process Data Objects)
+PDO используются для передачи данных в реальном времени. Модуль предоставляет 16 входных каналов, значения которых передаются через структуру "Inputs". Каждый канал измеряет ток в заданном диапазоне, определяемом настройками в SDO.
+
+Структура PDO:
+```
+|─ Inputs
+     |─ Channel 1 (Входной канал 1)
+     |─ Channel 2 (Входной канал 2)
+     |─ Channel 3 (Входной канал 3)
+     |─ Channel 4 (Входной канал 4)
+     |─ Channel 5 (Входной канал 5)
+     |─ Channel 6 (Входной канал 6)
+     |─ Channel 7 (Входной канал 7)
+     |─ Channel 8 (Входной канал 8)
+     |─ Channel 9 (Входной канал 9)
+     |─ Channel 10 (Входной канал 10)
+     |─ Channel 11 (Входной канал 11)
+     |─ Channel 12 (Входной канал 12)
+     |─ Channel 13 (Входной канал 13)
+     |─ Channel 14 (Входной канал 14)
+     |─ Channel 15 (Входной канал 15)
+     |─ Channel 16 (Входной канал 16)
 ```
 
-``` dtd title="SDO"
-SDO 0x1000, "Device Type"
-  0x1000:00, r-r-r-, uint32, 32 bit, "Device Type"
-SDO 0x1008, "Device Name"
-  0x1008:00, r-r-r-, string, 104 bit, "Device Name"
-SDO 0x1009, "Hardware Version"
-  0x1009:00, r-r-r-, string, 48 bit, "Hardware Version"
-SDO 0x100a, "Software Version"
-  0x100a:00, r-r-r-, string, 48 bit, "Software Version"
-SDO 0x1018, "Identity Object"
-  0x1018:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1018:01, r-r-r-, uint32, 32 bit, "Vendor ID"
-  0x1018:02, r-r-r-, uint32, 32 bit, "Product Code"
-  0x1018:03, r-r-r-, uint32, 32 bit, "Revision Number"
-  0x1018:04, r-r-r-, uint32, 32 bit, "Serial Number"
-SDO 0x1a00, "Current inputs (PDO)"
-  0x1a00:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1a00:01, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:02, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:03, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:04, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:05, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:06, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:07, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:08, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:09, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:0a, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:0b, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:0c, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:0d, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:0e, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:0f, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:10, r-r-r-, uint32, 32 bit, "Mapped object"
-SDO 0x1c00, "Sync Manager Communication type"
-  0x1c00:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1c00:01, r-r-r-, uint8, 8 bit, "Communications type SM0"
-  0x1c00:02, r-r-r-, uint8, 8 bit, "Communications type SM1"
-  0x1c00:03, r-r-r-, uint8, 8 bit, "Communications type SM2"
-  0x1c00:04, r-r-r-, uint8, 8 bit, "Communications type SM3"
-SDO 0x1c10, "Sync Manager 0 PDO Assignment"
-  0x1c10:00, r-r-r-, uint8, 8 bit, "Sync Manager 0 PDO Assignment"
-SDO 0x1c11, "Sync Manager 1 PDO Assignment"
-  0x1c11:00, r-r-r-, uint8, 8 bit, "Sync Manager 1 PDO Assignment"
-SDO 0x1c12, "Sync Manager 2 PDO Assignment"
-  0x1c12:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1c12:01, r-r-r-, uint16, 16 bit, "Mapped object"
-SDO 0x1c13, "Sync Manager 3 PDO Assignment"
-  0x1c13:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1c13:01, r-r-r-, uint16, 16 bit, "Mapped object"
-SDO 0x6000, "Input current"
-  0x6000:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x6000:01, r-r-r-, float, 32 bit, "Channel 1"
-  0x6000:02, r-r-r-, float, 32 bit, "Channel 2"
-  0x6000:03, r-r-r-, float, 32 bit, "Channel 3"
-  0x6000:04, r-r-r-, float, 32 bit, "Channel 4"
-  0x6000:05, r-r-r-, float, 32 bit, "Channel 5"
-  0x6000:06, r-r-r-, float, 32 bit, "Channel 6"
-  0x6000:07, r-r-r-, float, 32 bit, "Channel 7"
-  0x6000:08, r-r-r-, float, 32 bit, "Channel 8"
-  0x6000:09, r-r-r-, float, 32 bit, "Channel 9"
-  0x6000:0a, r-r-r-, float, 32 bit, "Channel 10"
-  0x6000:0b, r-r-r-, float, 32 bit, "Channel 11"
-  0x6000:0c, r-r-r-, float, 32 bit, "Channel 12"
-  0x6000:0d, r-r-r-, float, 32 bit, "Channel 13"
-  0x6000:0e, r-r-r-, float, 32 bit, "Channel 14"
-  0x6000:0f, r-r-r-, float, 32 bit, "Channel 15"
-  0x6000:10, r-r-r-, float, 32 bit, "Channel 16"
-SDO 0x8001, "Filtering" <!--(1)!-->
-  0x8001:00, r-r-r-, uint8, 8 bit, "Number of entries" 
-  0x8001:01, rwrwrw, uint8, 8 bit, "Average samples 1" 
-  0x8001:02, rwrwrw, uint8, 8 bit, "Average samples 2"
-  0x8001:03, rwrwrw, uint8, 8 bit, "Average samples 3"
-  0x8001:04, rwrwrw, uint8, 8 bit, "Average samples 4"
-  0x8001:05, rwrwrw, uint8, 8 bit, "Average samples 5"
-  0x8001:06, rwrwrw, uint8, 8 bit, "Average samples 6"
-  0x8001:07, rwrwrw, uint8, 8 bit, "Average samples 7"
-  0x8001:08, rwrwrw, uint8, 8 bit, "Average samples 8"
-  0x8001:09, rwrwrw, uint8, 8 bit, "Average samples 9"
-  0x8001:0a, rwrwrw, uint8, 8 bit, "Average samples 10"
-  0x8001:0b, rwrwrw, uint8, 8 bit, "Average samples 11"
-  0x8001:0c, rwrwrw, uint8, 8 bit, "Average samples 12"
-  0x8001:0d, rwrwrw, uint8, 8 bit, "Average samples 13"
-  0x8001:0e, rwrwrw, uint8, 8 bit, "Average samples 14"
-  0x8001:0f, rwrwrw, uint8, 8 bit, "Average samples 15"
-  0x8001:10, rwrwrw, uint8, 8 bit, "Average samples 16"
-SDO 0x9001, "Module parameters"
-  0x9001:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x9001:01, r-r-r-, uint16, 16 bit, "Metrology CRC16"
+* **Назначение:** Передача измеренных значений тока с каждого из 16 каналов.
+* ***Формат данных:*** 32-битное значение с плавающей точкой (float), обеспечивающее высокую точность измерений.
+### SDO (Service Data Objects)
+SDO используются для конфигурации модуля и диагностики состояния каналов. Структура SDO включает два основных раздела: настройки (Settings) и статус (Status).
+
+Структура SDO:
+
+```
+|─ Settings
+|     |─ Channel 1
+|     |     |─ Input type
+|     |     |     |─ 4-20 mA (Ток от 4 до 20 мА)
+|     |     |     |─ 0-20 mA (Ток от 0 до 20 мА)
+|     |     |     |─ 0-5 mA (Ток от 0 до 5 мА)
+|     |     |     |─ Disable (Отключено) — значение по умолчанию
+|     |     |─ Average samples (Среднее количество выборок)
+|     |─ Channel 2 (аналогично)
+|     |─ Channel 3 (аналогично)
+|     |─ Channel 4 (аналогично)
+|     |─ Channel 5 (аналогично)
+|     |─ Channel 6 (аналогично)
+|     |─ Channel 7 (аналогично)
+|     |─ Channel 8 (аналогично)
+|     |─ Channel 9 (аналогично)
+|     |─ Channel 10 (аналогично)
+|     |─ Channel 11 (аналогично)
+|     |─ Channel 12 (аналогично)
+|     |─ Channel 13 (аналогично)
+|     |─ Channel 14 (аналогично)
+|     |─ Channel 15 (аналогично)
+|     |─ Channel 16 (аналогично)
+|
+|─ Status
+|     |─ Channel 1
+|     |     |─ Status (Битовое поле)
+|     |─ Channel 2 (аналогично)
+|     |─ Channel 3 (аналогично)
+|     |─ Channel 4 (аналогично)
+|     |─ Channel 5 (аналогично)
+|     |─ Channel 6 (аналогично)
+|     |─ Channel 7 (аналогично)
+|     |─ Channel 8 (аналогично)
+|     |─ Channel 9 (аналогично)
+|     |─ Channel 10 (аналогично)
+|     |─ Channel 11 (аналогично)
+|     |─ Channel 12 (аналогично)
+|     |─ Channel 13 (аналогично)
+|     |─ Channel 14 (аналогично)
+|     |─ Channel 15 (аналогично)
+|     |─ Channel 16 (аналогично)
 ```
 
-1. В модуле реализовано фильтрация методом "Скользящего среднего" измеренных значений. Данная настройка позволяет изменять ширину окна выборки, минимальное значение - 1 (фильтрация выключена), максимальное - 255, по умолчанию - 16. 
+**Settings (Настройки):**  
+**Input type:** Позволяет выбрать тип входного сигнала для каждого канала: 4-20 мА, 0-20 мА, 0-5 мА или отключить канал (Disable).  
+
+???+ info "Примечание"
+    При отключение канала скорость опроса других увеличивается.
+
+**Average samples:** Настройка фильтрации методом "Скользящего среднего". Диапазон значений : от 1 (фильтрация выключена) до 255, по умолчанию — 16.  
+**Status (Состояние):**
+Отображает диагностическую информацию о состоянии каналов в виде битового поля:
+
+|Номер бита|Описание|
+|-|-|
+|0|ток превышает допустимый диапазон|
+|1|обрыв цепи|
+|2|Зарезервирован|
+|3|Зарезервирован|
+|4|Зарезервирован|
+|5|Зарезервирован|
+|6|Зарезервирован|
+|7|Зарезервирован|
+
+### Принцип работы
+**Конфигурация:** Через SDO задается тип входного сигнала (например, 4-20 мА) и ширина окна фильтрации для каждого канала.
+**Измерение:** Через PDO в реальном времени передаются измеренные значения тока с каждого из 16 каналов в пределах заданного диапазона.
+**Диагностика:** Через SDO можно запросить состояние каналов для выявления ошибок (перегрузка, обрыв и т.д.).
+### Пример конфигурации
+Установить Channel 1 в режим "4-20 mA" и ширину фильтрации 32 выборки через SDO.
+Получить значение тока с Channel 1 через PDO (например, 12.5 мА).
+Проверить состояние Channel 1 через SDO (Status), чтобы убедиться в отсутствии перегрузки или обрыва.
+
+
 
 
 

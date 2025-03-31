@@ -97,96 +97,95 @@ style="width: 100%; height: 500px;">
 </model-viewer>
 
 ## Программное обеспечение
-Актуальный конфигурационный файл можно скачать по 
-<a href="../../downloads/IPCSA_OG.xml" download>ссылке</a>
+Обмен данными осуществляется с использованием объектов PDO (Process Data Objects) для оперативной передачи входных данных и SDO (Service Data Objects) для настройки параметров и получения статуса каналов.
 
-``` dtd title="PDO"
-SM0: PhysAddr 0x1000, DefaultSize  128, ControlRegister 0x26, Enable 1
-SM1: PhysAddr 0x1080, DefaultSize  128, ControlRegister 0x22, Enable 1
-SM2: PhysAddr 0x1100, DefaultSize    0, ControlRegister 0x24, Enable 1
-SM3: PhysAddr 0x1180, DefaultSize   32, ControlRegister 0x20, Enable 1
-  TxPDO 0x1a00 "Current inputs (PDO)"
-    PDO entry 0x6000:01, 32 bit, "Channel 1"
-    PDO entry 0x6000:02, 32 bit, "Channel 2"
-    PDO entry 0x6000:03, 32 bit, "Channel 3"
-    PDO entry 0x6000:04, 32 bit, "Channel 4"
-    PDO entry 0x6000:05, 32 bit, "Channel 5"
-    PDO entry 0x6000:06, 32 bit, "Channel 6"
-    PDO entry 0x6000:07, 32 bit, "Channel 7"
-    PDO entry 0x6000:08, 32 bit, "Channel 8"
+## PDO (Process Data Objects)
+PDO используются для передачи данных в реальном времени. Модуль предоставляет 8 входных каналов, значения которых передаются через структуру "Inputs". Каждый канал измеряет напряжение в заданном диапазоне, определяемом настройками в SDO.
+
+Структура PDO:
+```
+|─ Inputs
+     |─ Channel 1 (Входной канал 1)
+     |─ Channel 2 (Входной канал 2)
+     |─ Channel 3 (Входной канал 3)
+     |─ Channel 4 (Входной канал 4)
+     |─ Channel 5 (Входной канал 5)
+     |─ Channel 6 (Входной канал 6)
+     |─ Channel 7 (Входной канал 7)
+     |─ Channel 8 (Входной канал 8)
+```
+**Назначение:** Передача измеренных значений напряжения с каждого из 8 каналов.  
+**Формат данных:** 32-битное значение с плавающей точкой (float), обеспечивающее высокую точность измерений.
+## SDO (Service Data Objects)
+SDO используются для конфигурации модуля и диагностики состояния каналов. Структура SDO включает два основных раздела: настройки (Settings) и статус (Status).
+
+Структура SDO:
+```
+|─ Settings
+|     |─ Channel 1
+|     |     |─ Input type
+|     |     |     |─ Off (Выключено) — значение по умолчанию
+|     |     |     |─ Voltage 0 +5V (Напряжение от 0 до +5 В)
+|     |     |     |─ Voltage 0 +10V (Напряжение от 0 до +10 В)
+|     |     |     |─ Voltage -5 +5V (Напряжение от -5 до +5 В)
+|     |     |     |─ Voltage -10 +10V (Напряжение от -10 до +10 В)
+|     |     |─ Average samples (Среднее количество выборок)
+|     |─ Channel 2 (аналогично)
+|     |─ Channel 3 (аналогично)
+|     |─ Channel 4 (аналогично)
+|     |─ Channel 5 (аналогично)
+|     |─ Channel 6 (аналогично)
+|     |─ Channel 7 (аналогично)
+|     |─ Channel 8 (аналогично)
+|
+|─ Status
+|     |─ Channel 1
+|     |     |─ Status (Битовое поле)
+|     |─ Channel 2 (аналогично)
+|     |─ Channel 3 (аналогично)
+|     |─ Channel 4 (аналогично)
+|     |─ Channel 5 (аналогично)
+|     |─ Channel 6 (аналогично)
+|     |─ Channel 7 (аналогично)
+|     |─ Channel 8 (аналогично)
+Settings (Настройки):
 ```
 
-``` dtd title="SDO"
-SDO 0x1000, "Device Type"
-  0x1000:00, r-r-r-, uint32, 32 bit, "Device Type"
-SDO 0x1008, "Device Name"
-  0x1008:00, r-r-r-, string, 104 bit, "Device Name"
-SDO 0x1009, "Hardware Version"
-  0x1009:00, r-r-r-, string, 48 bit, "Hardware Version"
-SDO 0x100a, "Software Version"
-  0x100a:00, r-r-r-, string, 48 bit, "Software Version"
-SDO 0x1018, "Identity Object"
-  0x1018:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1018:01, r-r-r-, uint32, 32 bit, "Vendor ID"
-  0x1018:02, r-r-r-, uint32, 32 bit, "Product Code"
-  0x1018:03, r-r-r-, uint32, 32 bit, "Revision Number"
-  0x1018:04, r-r-r-, uint32, 32 bit, "Serial Number"
-SDO 0x1a00, "Current inputs (PDO)"
-  0x1a00:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1a00:01, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:02, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:03, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:04, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:05, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:06, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:07, r-r-r-, uint32, 32 bit, "Mapped object"
-  0x1a00:08, r-r-r-, uint32, 32 bit, "Mapped object"
-SDO 0x1c00, "Sync Manager Communication type"
-  0x1c00:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1c00:01, r-r-r-, uint8, 8 bit, "Communications type SM0"
-  0x1c00:02, r-r-r-, uint8, 8 bit, "Communications type SM1"
-  0x1c00:03, r-r-r-, uint8, 8 bit, "Communications type SM2"
-  0x1c00:04, r-r-r-, uint8, 8 bit, "Communications type SM3"
-SDO 0x1c10, "Sync Manager 0 PDO Assignment"
-  0x1c10:00, r-r-r-, uint8, 8 bit, "Sync Manager 0 PDO Assignment"
-SDO 0x1c11, "Sync Manager 1 PDO Assignment"
-  0x1c11:00, r-r-r-, uint8, 8 bit, "Sync Manager 1 PDO Assignment"
-SDO 0x1c12, "Sync Manager 2 PDO Assignment"
-  0x1c12:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1c12:01, r-r-r-, uint16, 16 bit, "Mapped object"
-SDO 0x1c13, "Sync Manager 3 PDO Assignment"
-  0x1c13:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x1c13:01, r-r-r-, uint16, 16 bit, "Mapped object"
-SDO 0x6000, "Input voltage"
-  0x6000:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x6000:01, r-r-r-, float, 32 bit, "Channel 1"
-  0x6000:02, r-r-r-, float, 32 bit, "Channel 2"
-  0x6000:03, r-r-r-, float, 32 bit, "Channel 3"
-  0x6000:04, r-r-r-, float, 32 bit, "Channel 4"
-  0x6000:05, r-r-r-, float, 32 bit, "Channel 5"
-  0x6000:06, r-r-r-, float, 32 bit, "Channel 6"
-  0x6000:07, r-r-r-, float, 32 bit, "Channel 7"
-  0x6000:08, r-r-r-, float, 32 bit, "Channel 8"
-SDO 0x8001, "Filtering" 
-  0x8001:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x8001:01, rwrwrw, uint8, 8 bit, "Average samples 1" <!--(1)!-->
-  0x8001:02, rwrwrw, uint8, 8 bit, "Average samples 2"
-  0x8001:03, rwrwrw, uint8, 8 bit, "Average samples 3"
-  0x8001:04, rwrwrw, uint8, 8 bit, "Average samples 4"
-  0x8001:05, rwrwrw, uint8, 8 bit, "Average samples 5"
-  0x8001:06, rwrwrw, uint8, 8 bit, "Average samples 6"
-  0x8001:07, rwrwrw, uint8, 8 bit, "Average samples 7"
-  0x8001:08, rwrwrw, uint8, 8 bit, "Average samples 8"
-SDO 0x8002, "Range Setting"
-  0x8002:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x8002:01, rwrwrw, uint8, 8 bit, "Input Range" <!--(2)!-->
-SDO 0x9001, "Module parameters"
-  0x9001:00, r-r-r-, uint8, 8 bit, "Number of entries"
-  0x9001:01, r-r-r-, uint16, 16 bit, "Metrology CRC16"  
-```
+**Input type:** Позволяет выбрать тип входного сигнала для каждого канала: Off (Выключено), Voltage 0 +5V, Voltage 0 +10V, Voltage -5 +5V или Voltage -10 +10V. 
 
-1. В модуле реализовано фильтрация методом "Скользящего среднего" измеренных значений. Данная настройка позволяет изменять ширину окна выборки, минимальное значение - 1 (фильтрация выключена), максимальное - 255, по умолчанию - 16. 
-2. Эта настройка позволяет изменить диапазон измеряемого напряжения, чем меньше диапазон, тем выше точность измерения.:warning: Настройка применяется ко всем каналам!
+???+ info "Примечание"
+    При отключении канала скорость опроса других увеличивается
+При уменьшении измеряемого диапазона (например, с Voltage -10 +10V до Voltage 0 +5V) увеличивается точность измерений, однако выбранный диапазон должен быть одинаковым для всех каналов модуля.
+
+**Average samples:** Настройка фильтрации методом "Скользящего среднего". Диапазон значений: от 1 (фильтрация выключена) до 255, по умолчанию — 16.
+
+**Status (Состояние):**
+
+Отображает диагностическую информацию о состоянии каналов в виде битового поля:
+
+|Номер бита|Описание|
+|-|-|
+|0|Отключен|
+|1|Перегрузка|
+|2|Зарезервирован|
+|3|Зарезервирован|
+|4|Зарезервирован|
+|5|Зарезервирован|
+|6|Зарезервирован|
+|7|Зарезервирован|
+
+
+### Принцип работы
+**Конфигурация:** Через SDO задается тип входного сигнала (например, Voltage 0 +10V) и ширина окна фильтрации для каждого канала.
+
+**Измерение:** Через PDO в реальном времени передаются измеренные значения напряжения с каждого из 8 каналов в пределах заданного диапазона.
+
+**Диагностика:** Через SDO можно запросить состояние каналов для выявления ошибок (перегрузка, отключение и т.д.).
+
+### Пример конфигурации
+Установить Channel 1 в режим "Voltage -10 +10V" и ширину фильтрации 32 выборки через SDO.
+Получить значение напряжения с Channel 1 через PDO (например, 7.2 В).
+Проверить состояние Channel 1 через SDO (Status), чтобы убедиться в отсутствии перегрузки.
 
 
 
