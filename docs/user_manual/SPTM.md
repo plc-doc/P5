@@ -59,4 +59,6 @@ exposure="0.5"
 style="width: 100%; height: 500px;">
 </model-viewer>
 
-
+## Файлы для скачивания   
+<a href="/downloads/Module RJ45.STEP" download>3D-модель</a>   
+<a href="/downloads/Module RJ45.dwg" download>2D-модель</a>    

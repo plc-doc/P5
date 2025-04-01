@@ -127,3 +127,8 @@ style="width: 100%; height: 500px;">
 |Скорость поворота, градусов/минуту 3 канала|SDO|-|?|REAL32||
 |Настройка микрошага, PU/Rev 4 канала|SDO|-|?|UINT32||
 |Скорость поворота, градусов/минуту 4 канала|SDO|-|?|REAL32||
+
+## Файлы для скачивания
+<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>      
+<a href="/downloads/Module 18-pin.step" download>3D-модель</a>   
+<a href="/downloads/Module 18-pin.dwg" download>2D-модель</a> 

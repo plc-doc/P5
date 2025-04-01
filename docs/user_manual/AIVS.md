@@ -90,3 +90,8 @@ field-of-view="30deg"
 exposure="0.5"
 style="width: 100%; height: 500px;">
 </model-viewer>
+
+## Файлы для скачивания
+<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>     
+<a href="/downloads/Module 18-pin.step" download>3D-модель</a>   
+<a href="/downloads/Module 18-pin.dwg" download>2D-модель</a>    

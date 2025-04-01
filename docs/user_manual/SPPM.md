@@ -108,4 +108,7 @@ style="width: 100%; height: 500px;">
 </model-viewer>
 
 
+## Файлы для скачивания   
+<a href="/downloads/Module 18-pin.step" download>3D-модель</a>   
+<a href="/downloads/Module 18-pin.dwg" download>2D-модель</a>    
 

@@ -80,8 +80,7 @@ style="width: 100%; height: 500px;">
 
 
 ## Программное обеспечение
-Актуальный конфигурационный файл можно скачать по 
-<a href="../../downloads/IPCSA_OG.xml" download>ссылке</a>
+
 
  
 ### Адреса регистов
@@ -119,3 +118,9 @@ style="width: 100%; height: 500px;">
 | Частота ШИМ 14 канала | SDO |?|?|USIGNED16||
 | Частота ШИМ 15 канала | SDO |?|?|USIGNED16||
 | Частота ШИМ 16 канала | SDO |?|?|USIGNED16||
+
+
+## Файлы для скачивания
+<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>    
+<a href="/downloads/Module 18-pin.step" download>3D-модель</a>   
+<a href="/downloads/Module 18-pin.dwg" download>2D-модель</a>    
