@@ -1,4 +1,4 @@
-/* Master 0, Slave 0, "IPCSA-OG-DIGITAL-OUTPUT"
+/* Master 0, Slave 0, "PP-P5-DIGITAL-OUTPUT"
  * Vendor ID:       0xe00004d8
  * Product code:    0x00000021
  * Revision number: 0x00000001

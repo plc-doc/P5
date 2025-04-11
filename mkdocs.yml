@@ -56,31 +56,31 @@ nav:
   - Руководство пользователя:  
     
     - Основные модули:
-      - Модуль основной IPCSA-OG-GM: user_manual/GM.md
+      - Модуль основной PP-P5-GM: user_manual/GM.md
     - Дискретные модули:
-      - Модуль дискретного ввода IPCSA-OG-DI: user_manual/DI.md
-      - Модуль дискретного вывода IPCSA-OG-DO: user_manual/DO.md
-      - Модуль дискретного вывода ШИМ IPCSA-OG-DPWM: user_manual/DPWM.md
+      - Модуль дискретного ввода PP-P5-DI: user_manual/DI.md
+      - Модуль дискретного вывода PP-P5-DO: user_manual/DO.md
+      - Модуль дискретного вывода ШИМ PP-P5-DPWM: user_manual/DPWM.md
     - Аналоговые модули:
-      - Модуль аналогового ввода тока IPCSA-OG-AIC: user_manual/AIC.md
-      - Модуль аналогового ввода напряжения IPCSA-OG-AIV: user_manual/AIV.md 
-      - Модуль аналогового ввода термопары IPCSA-OG-AITC: user_manual/AITC.md
-      - Модуль аналогового ввода термосопротивления IPCSA-OG-AITR: user_manual/AITR.md
-      - Модуль аналогового ввода синусно-косинусного трансформатора IPCSA-OG-AISCT: user_manual/AISCT.md
-      - Модуль аналогового ввода виброскорости IPCSA-OG-AIVS: user_manual/AIVS.md
-      - Модуль аналогового вывода IPCSA-OG-AO: user_manual/AO.md
+      - Модуль аналогового ввода тока PP-P5-AIC: user_manual/AIC.md
+      - Модуль аналогового ввода напряжения PP-P5-AIV: user_manual/AIV.md 
+      - Модуль аналогового ввода термопары PP-P5-AITC: user_manual/AITC.md
+      - Модуль аналогового ввода термосопротивления PP-P5-AITR: user_manual/AITR.md
+      - Модуль аналогового ввода синусно-косинусного трансформатора PP-P5-AISCT: user_manual/AISCT.md
+      - Модуль аналогового ввода виброскорости PP-P5-AIVS: user_manual/AIVS.md
+      - Модуль аналогового вывода PP-P5-AO: user_manual/AO.md
     - Интерфейсные модули:
-       - Модуль интерфейсный RS-485/422 IPCSA-OG-IF485/422: user_manual/IF485_422.md
-       - Модуль интерфейсный IFARINC IPCSA-OG-IFARINC: user_manual/IFARINC.md
-       - Модуль интерфейсный IFCAN IPCSA-OG-IFCAN: user_manual/IFCAN.md
-       - Модуль интерфейсный IF232 IPCSA-OG-IF232: user_manual/IF232.md
-       - Модуль интерфейсный IFHART IPCSA-OG-IFHART: user_manual/IFHART.md
+       - Модуль интерфейсный RS-485/422 PP-P5-IF485/422: user_manual/IF485_422.md
+       - Модуль интерфейсный IFARINC PP-P5-IFARINC: user_manual/IFARINC.md
+       - Модуль интерфейсный IFCAN PP-P5-IFCAN: user_manual/IFCAN.md
+       - Модуль интерфейсный IF232 PP-P5-IF232: user_manual/IF232.md
+       - Модуль интерфейсный IFHART PP-P5-IFHART: user_manual/IFHART.md
     - Специальные модули:
-      - Модуль счета импульсов IPCSA-OG-SPPC: user_manual/SPPC.md
-      - Модуль ввода питания IPCSA-OG-SPPM: user_manual/SPPM.md
-      - Модуль оконечный IPCSA-OG-SPТM: user_manual/SPTM.md
-      - Модуль управления драйвером шагового двигателя IPCSA-OG-SSMD: user_manual/SSMD.md
-      - Модуль расширения коммутации IPCSA-OG-SPSE: user_manual/SPSE.md
+      - Модуль счета импульсов PP-P5-SPPC: user_manual/SPPC.md
+      - Модуль ввода питания PP-P5-SPPM: user_manual/SPPM.md
+      - Модуль оконечный PP-P5-SPТM: user_manual/SPTM.md
+      - Модуль управления драйвером шагового двигателя PP-P5-SSMD: user_manual/SSMD.md
+      - Модуль расширения коммутации PP-P5-SPSE: user_manual/SPSE.md
     - Основные сведения: user_manual/basic_nformation.md
     - Составление групп: user_manual/groups.md
     - Составление сборки: user_manual/assembly.md

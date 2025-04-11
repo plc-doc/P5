@@ -1,4 +1,4 @@
-/* Master 0, Slave 0, "IPCSA-OG-AIC"
+/* Master 0, Slave 0, "PP-P5-AIC"
  * Vendor ID:       0x00000001
  * Product code:    0x00009252
  * Revision number: 0x00000001
