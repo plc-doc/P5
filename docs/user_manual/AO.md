@@ -89,11 +89,11 @@
     ![alt text](../img/dimensions/installation_dimensions.png) 
 
 ## 3D-модель
-<model-viewer src="https://xn--j1abl.online//img/3d/DI.glb"
+<model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"
 alt="3D Model"
 auto-rotate
 camera-controls
-poster="https://xn--j1abl.online//img/3d/posterDI.webp"
+poster="https://manual.saplc.ru//img/3d/posterDI.webp"
 camera-orbit="160deg 75deg 348m"
 field-of-view="30deg"
 exposure="0.5"
