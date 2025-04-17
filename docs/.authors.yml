@@ -3,4 +3,7 @@ authors:
     name: Женя Леончук
     description: Зам. ГК
     avatar: img/avatar/Leonchuk.jpg
-    
+  diachkov:
+    name: Саша Дячков
+    description: Инженер-программист АСУТП
+    avatar: img/avatar/Diachkov.jpg    
