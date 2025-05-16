@@ -8,7 +8,7 @@
 <div class="grid cards" markdown>
 
 ![Image title](../img/modules/IFARINC.png){ width="150" align=left  }
- Модуль интерфейсный ARINC (IFARINC) (арт. REMA-P5-AIFARINC) является модулем расширения, осуществлет подключение и работу ПЛК с интерфейсом ARINC-429.
+ Модуль интерфейсный ARINC (арт. REMA-P5-AIFARINC) является модулем расширения, осуществлет подключение и работу ПЛК с интерфейсом ARINC-429.
 </div>
 
 ## Технические характеристики 
