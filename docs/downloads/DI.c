@@ -1,4 +1,4 @@
-/* Master 0, Slave 0, "PP-P5-DIGITAL-INPUT"
+/* Master 0, Slave 0, "REMA-P5-DIGITAL-INPUT"
  * Vendor ID:       0xe00004d8
  * Product code:    0x00000020
  * Revision number: 0x00000001

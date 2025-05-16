@@ -1,4 +1,4 @@
-/* Master 0, Slave 0, "PP-P5-AIV"
+/* Master 0, Slave 0, "REMA-P5-AIV"
  * Vendor ID:       0x00000001
  * Product code:    0x01009252
  * Revision number: 0x00000001
