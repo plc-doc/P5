@@ -42,7 +42,7 @@
 <div class="grid cards" markdown>
 ![Image title](../img/connection/DO.svg){ width="370"; align=left  }
 
-![Image title](../img/connection/connector_18pin.png){ width="170";  }
+![Image title](../img/connection/connector_18pin.png){ width="170";align=left   }
 </div>
 
 | Обозначение | Название канала | Описание                       |
