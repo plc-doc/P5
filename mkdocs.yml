@@ -1,4 +1,4 @@
-site_name:  CA ПЛК
+site_name:  СА ПЛК
 site_url: https://manual.saplc.ru/
 
 theme:
@@ -15,7 +15,7 @@ theme:
     - search.highlight
     - content.code.copy
   
-  
+  logo: img/logo_old.svg
   favicon: img/favicon.svg
   icon:
     annotation: material/chevron-right-circle
@@ -80,7 +80,7 @@ nav:
       - Модуль счета импульсов SA-P5-SPPC: user_manual/SPPC.md
       - Модуль ввода питания SA-P5-SPPM: user_manual/SPPM.md
       - Модуль оконечный SA-P5-SPТM: user_manual/SPTM.md
-      - Модуль управления драйвером шагового двигателя SA-P5-SSMD: user_manual/SSMD.md
+      - Модуль управления драйвером шагового двигателя SA-P5-SPSMD: user_manual/SPSMD.md
       - Модуль расширения коммутации SA-P5-SPSE: user_manual/SPSE.md
     - Основные сведения: user_manual/basic_nformation.md
     - Составление групп: user_manual/groups.md
