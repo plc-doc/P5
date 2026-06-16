@@ -9,7 +9,7 @@
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPOTM.png){ width="150" align=left  }
+![Image title](img/modules/SPOTM.webp){ width="150" align=left  }
 Модуль оконечный  (арт. SA-P5-SOPTM) является модулем расширения и предназначен для перехода с внутренней шины на внешнюю шину Ethernet через SFP порт .
 Модуль используется для подключения последующих групп модулей и ставится как в конце, так и в начале каждой группы.
 </div>
@@ -34,9 +34,9 @@
 | Расположение при монтаже         | Вертикальное       |
 
 ## Схема подключения
-![Image title](img/connection/SPTM_1.png){ width="250"  }
-![Image title](img/connection/SPTM_2.png){ width="260" }
-![Image title](img/connection/SPTM_3.png){ width="290"  }
+![Image title](img/connection/SPTM_1.webp){ width="250"  }
+![Image title](img/connection/SPTM_2.webp){ width="260" }
+![Image title](img/connection/SPTM_3.webp){ width="290"  }
 
 ???+ danger "Использовать только первым или полседним в группе"
     Использовать в качестве модуля расширения запрещено! Воспользуйтесь [модулем расширения коммутации](SPSE.md)
@@ -46,9 +46,9 @@
 
 ## Размеры
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/dimensions_module.svg){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions_module.svg) 
 
 <model-viewer src="https://manual.saplc.ru//img/3d/SPTM.glb"
 alt="3D Model"

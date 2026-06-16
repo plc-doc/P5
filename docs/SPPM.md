@@ -7,7 +7,7 @@
 <div class="grid cards" markdown>
 
 
-![Image title](img/modules/SPPM.png){ width="250" align=left  }
+![Image title](img/modules/SPPM.webp){ width="250" align=left  }
 Модуль ввода дополнительного питания (SPPM) (арт. SA-P5-SPPM) является модулем расширения и предназначен для обеспечения питания модулей.
 Модуль ввода дополнительного питания обеспечивает мощность питания до 48 Вт. Для обеспечения бесперебойного питания модулей от внешних источников питания, модуль SPPM поддерживает резервирование питания от 2-х независимых источников питания.
 Функционал модуля позволяет детектировать повышенное и пониженное напряжение на входе.
@@ -39,7 +39,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/SPPM.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 По умолчанию, без установки перемычки, модуль SA-P5-SPPM подает питание только в левую сторону.
 При установке перемычки между контактами 1 и 2, питание подается не только в правую сторону, но и в левую, что позволяет равномерно распределять энергию по всей группе модулей, а также обеспечивает резервирование питания
@@ -89,9 +89,9 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/dimensions_module.svg){ width="580"}
 === "Установочные размеры"
-    ![alt text](img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions_module.svg) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"
